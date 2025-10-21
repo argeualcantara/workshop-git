@@ -1,5 +1,9 @@
-from alpine
+FROM node:25.0.0-alpine3.22
 
-RUN apk-update && apk add python
+RUN apk update
 
-ENTRYPOINT ["python"]
+WORKDIR /app
+
+COPY . /app
+
+ENTRYPOINT ["node", "/app/server.js"]
