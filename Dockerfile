@@ -1,9 +1,6 @@
 from alpine
 
-RUN apk-update && apk add python
+RUN apk update && apk add python
 
 ENTRYPOINT ["python"]
-
-
-
 
