@@ -1,4 +1,4 @@
-from alpine
+FROM alpine
 
 RUN apk update && apk add python
 
